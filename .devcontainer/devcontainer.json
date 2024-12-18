@@ -12,6 +12,9 @@
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
+		"code-runner.executorMap": {
+			"cpp": "g++ -o $fileNameWithoutExtension $fileName -std=c++17 -lboost_system -lboost_filesystem -fopenmp -lmpi"
+		},
 		"terminal.integrated.shell.linux": "/bin/bash",
 		"editor.formatOnSave": true,
 		"python.languageServer": "Pylance",
@@ -33,13 +36,14 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"visualstudioexptteam.vscodeintellicode",
-		"ms-vscode.cpptools",
+		"ms-vscode.cpptools-extension-pack",
 		"xaver.clang-format",
 		"ms-python.python",
 		"ms-python.vscode-pylance",
 		"coenraads.bracket-pair-colorizer-2",
 		"shardulm94.trailing-spaces",
 		"vscodevim.vim",
+		"formulahendry.code-runner",
 		"mhutchie.git-graph", // Git Graph の拡張機能ID
 		"ms-azuretools.vscode-docker" // Docker 拡張機能ID
 	],
