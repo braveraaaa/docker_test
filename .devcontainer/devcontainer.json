@@ -35,17 +35,18 @@
 		"visualstudioexptteam.vscodeintellicode",
 		"ms-vscode.cpptools",
 		"xaver.clang-format",
-		"donjayamanne.git-extension-pack",
 		"ms-python.python",
 		"ms-python.vscode-pylance",
 		"coenraads.bracket-pair-colorizer-2",
 		"shardulm94.trailing-spaces",
-		"vscodevim.vim"
+		"vscodevim.vim",
+		"mhutchie.git-graph", // Git Graph の拡張機能ID
+		"ms-azuretools.vscode-docker" // Docker 拡張機能ID
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install -r requirements.txt",
+	"postCreateCommand": "pip3 install -r requirements.txt && git config --global user.name 'Braveraaaa' && git config --global user.email 'actors@ymail.ne.jp'"
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
 }
