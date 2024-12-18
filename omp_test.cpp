@@ -1,6 +1,6 @@
 #include <boost/format.hpp>
-#include <boost/mpi.hpp>
 #include <iostream>
+#include <mpi.h>
 #include <omp.h>
 #include <stdio.h>
 

@@ -13,7 +13,7 @@
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
 		"code-runner.executorMap": {
-			"cpp": "g++ -o $fileNameWithoutExtension $fileName -std=c++17 -lboost_system -lboost_filesystem -fopenmp -lmpi"
+			"cpp": "mpic++ -o $fileNameWithoutExt.o $fileName -std=c++17 -lboost_system -lboost_filesystem -fopenmp -lmpi"
 		},
 		"terminal.integrated.shell.linux": "/bin/bash",
 		"editor.formatOnSave": true,
